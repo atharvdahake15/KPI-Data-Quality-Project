@@ -1,0 +1,12 @@
+Quality Check,Failed Rows,Total Rows,Pass Rate (%),Rule
+Missing Order ID,0,12,100.0,Order ID must not be missing
+Missing City,1,12,91.67,City must not be empty
+Duplicate Order ID,2,12,83.33,Order ID must be unique according to the data dictionary
+Invalid Date Format or Value,3,12,75.0,Order date must use YYYY-MM-DD format
+Date Outside Allowed Range,0,12,100.0,Date must be between 2025-01-01 and today
+Invalid Customer Segment,0,12,100.0,"Segment must be Student, Fresher, or Professional"
+Invalid Product Category,0,12,100.0,Category must match the documented allowed values
+Invalid Quantity,2,12,83.33,Quantity must be a positive number
+Invalid Unit Price,0,12,100.0,Unit price must be positive
+Missing or Invalid Discount,2,12,83.33,Discount must be present and between 0 and 100
+Invalid Payment Status,2,12,83.33,Payment status must be Paid or Pending
